@@ -72,11 +72,8 @@ namespace SensorsTransit
         {
             var safeLock = new Object();
 
-<<<<<<< HEAD
-            Parallel.ForEach(Sensors, delegate(Sensor i)
-=======
+
             Parallel.ForEach(Sensors, delegate (Sensor i)
->>>>>>> tarea1
             {
                 lock (safeLock)
                 {
