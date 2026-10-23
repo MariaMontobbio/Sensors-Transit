@@ -70,10 +70,15 @@ namespace SensorsTransit
         /// </summary>
         public void RebreDadesSensors()
         {
-            for (int i = 0; i < NumSensors; i++)
+            var safeLock = new Object();
+
+            Parallel.ForEach(Sensors, delegate (Sensor i)
             {
-                SensorsLocal.Add(Sensors[i].EnviaDadesCentral());
-            }
+                lock (safeLock)
+                {
+                    SensorsLocal.Add(i.EnviaDadesCentral());
+                }
+            });
         }
 
         //TASCA A FER: Cal optimitzar aquest mètode, si és possible utilitzant mètodes de programació en paral·lel, concretamen el Parallel.For
