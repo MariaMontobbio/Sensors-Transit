@@ -220,7 +220,7 @@ namespace SensorsTransit
         //TASCA A FER: Intenta utilitza els fils per tal de cridar en paral·lel els mètodes que ho permetin. 
         static void Main(string[] args)
         {
-            SensorsCiutat SensorsBCN = new SensorsCiutat(100);
+            SensorsCiutat SensorsBCN = new SensorsCiutat(10);
 
             DateTime T1 = DateTime.Now;
 
@@ -229,20 +229,27 @@ namespace SensorsTransit
             SensorsBCN.RebreDadesSensors();
             Console.WriteLine("Dades rebudes");
 
+            Thread calcMitjana = new Thread(SensorsBCN.CalcularMitjana);
+            Thread calcMaxVehicles = new Thread(SensorsBCN.CalcularMaxVehicles);
+            Thread ordenVehicles = new Thread(SensorsBCN.OrdenaVehicles);
+            calcMitjana.Start();
+            calcMaxVehicles.Start();
+            ordenVehicles.Start();
+
             SensorsBCN.MostraDadesSensors();
 
 
             Console.WriteLine("Calculant mitjana");
-            SensorsBCN.CalcularMitjana();
+            calcMitjana.Join();
             Console.WriteLine("Mitjana vehicles: {0}", SensorsBCN.MitjanaVehicles);
 
 
             Console.WriteLine("Calculant vehicles max");
-            SensorsBCN.CalcularMaxVehicles();
+            calcMaxVehicles.Join();
             Console.WriteLine("Max vehicles: {0}", SensorsBCN.MaxVehicles);
 
             Console.WriteLine("Ordenant vehicles");
-            SensorsBCN.OrdenaVehicles();
+            ordenVehicles.Join();
             SensorsBCN.MostraDadesOrdenades();
 
             Console.WriteLine("Resetejant sensors");
