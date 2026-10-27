@@ -239,7 +239,7 @@ namespace SensorsTransit
         //TASCA A FER: Intenta utilitza els fils per tal de cridar en paral·lel els mètodes que ho permetin. 
         static void Main(string[] args)
         {
-            SensorsCiutat SensorsBCN = new SensorsCiutat(10);
+            SensorsCiutat SensorsBCN = new SensorsCiutat(100);
 
             DateTime T1 = DateTime.Now;
 
