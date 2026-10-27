@@ -173,7 +173,9 @@ namespace SensorsTransit
             bool canvi = true;
             Sensor aux;
 
-            SensorsLocalOrd = SensorsLocal;
+            // Pero necesitem una nova llista (copia, no alias). Altres fils llegeixen la variable compartida SensorsLocal
+            // No podem modificarla --> condició de carrera
+            SensorsLocalOrd = new List<Sensor>(SensorsLocal);
             while (canvi)
             {
                 canvi = false;
