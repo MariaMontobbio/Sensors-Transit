@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "2XEdM/xIZBY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\10.0.12\\microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.12\\microsoft.net.illink.tasks.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\runtime.win-arm64.microsoft.dotnet.ilcompiler\\10.0.12\\runtime.win-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\10.0.12\\microsoft.netcore.app.runtime.win-arm64.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\10.0.12\\microsoft.windowsdesktop.app.runtime.win-arm64.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\runtime.win-arm64.microsoft.dotnet.ilcompiler\\10.0.12\\runtime.win-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\10.0.12\\microsoft.aspnetcore.app.runtime.win-arm64.10.0.12.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.netcore.app.runtime.nativeaot.win-arm64\\10.0.12\\microsoft.netcore.app.runtime.nativeaot.win-arm64.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

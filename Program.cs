@@ -89,11 +89,12 @@ namespace SensorsTransit
         public void MostraDadesSensors()
         {
             string Missatge;
-            Parallel.ForEach(Sensors, delegate (Sensor sensor)
+
+            for (int i = 0; i < NumSensors; i++)
             {
-                Missatge = "Sensor nº " + sensor.IdSensor + " --- " + sensor.NumVehicles + " vehicles comptabilitzats.";
+                Missatge = "Sensor nº " + SensorsLocal[i].IdSensor + " --- " + SensorsLocal[i].NumVehicles + " vehicles comptabilitzats.";
                 Mostra(Missatge);
-            });
+            }
         }
 
         //No cal optimitzar aquest mètode, només és per comprovar que s'han ordenat bé les dades
@@ -127,11 +128,7 @@ namespace SensorsTransit
         {
             Parallel.ForEach(SensorsLocal, delegate (Sensor sensor)
             {
-                // SumaVehicle es variable compartida --> condició carrera
-                int parcial = Suma(0, sensor);
-
-                // Suma el parcial una sola vegada
-                Interlocked.Add(ref SumaVehicles, parcial);
+                Interlocked.Add(ref SumaVehicles, Suma(SumaVehicles, sensor));
             });
 
             MitjanaVehicles = SumaVehicles / NumSensors;
