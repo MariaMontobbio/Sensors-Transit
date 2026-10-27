@@ -153,7 +153,7 @@ namespace SensorsTransit
                 int valorSensor = MesGran(0, SensorsLocal[i]);
                 
                 // Secció crítica
-                lock (this)
+                lock (locker)
                 {
                     // Métode bombolla
                     if (valorSensor > MaxVehicles)
