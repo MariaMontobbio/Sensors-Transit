@@ -139,12 +139,26 @@ namespace SensorsTransit
         /// </summary>
         public void CalcularMaxVehicles()
         {
+            // Variable a nivel clase (+)
             MaxVehicles = 0;
+            // Objeto auxiliar para lock
+            object locker = new object();
 
-            for (int i = 0; i < NumSensors - 1; i++)
+            // 0: incluye, NumSensors: excluye, delegate: cuerpo en paral·lelo
+            Parallel.For(0, NumSensors, delegate (int i)
             {
-                MaxVehicles = MesGran(MaxVehicles, SensorsLocal[i]);
-            }
+                // MaxVehicles variable compartida --> condición de carrera. Mejor poner 0 (independiente)
+                // No dentro del lock, MesGran() tiene Sleep(). Lento, en paralelo
+                int valorSensor = MesGran(0, SensorsLocal[i]);
+                
+                // Sección crítica
+                lock (this)
+                {
+                    // Método burbuja
+                    if (valorSensor > MaxVehicles)
+                        MaxVehicles = valorSensor;
+                }
+            });
         }
 
         //TASCA A FER: Optimitzar aquest mètode si és possible
