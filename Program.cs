@@ -165,6 +165,8 @@ namespace SensorsTransit
         /// <summary>
         /// Aquest mètode ordena el nombre de vehicles. S'utilitza el mètode EstanOrdenats (que té un retard)
         /// </summary>
+        
+        // No es pot optimitzar amb Parallel.For perquè cada comparació depèn de l'anterior. Bubble sort sempre es seqüencial
         public void OrdenaVehicles()
         {
             bool canvi = true;
