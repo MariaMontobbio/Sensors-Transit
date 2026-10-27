@@ -112,11 +112,12 @@ namespace SensorsTransit
         /// </summary>
         public void ResetSensors()
         {
-            for (int i = 0; i < NumSensors; i++)
+            // No hi ha variable compartida, es una paral·lització fácil, sense lock
+            Parallel.For(0, NumSensors, delegate (int i)
             {
                 Sensors[i].Connecta();
                 Sensors[i].Reset();
-            }
+            });
         }
 
         //TASCA A FER: Optimitzar aquest mètode si és possible
