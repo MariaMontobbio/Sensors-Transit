@@ -15,11 +15,11 @@
         }
       }
     },
-    "net10.0/win-arm64": {
+    "net10.0/win-x64": {
       "Microsoft.DotNet.ILCompiler/10.0.12": {
         "type": "package",
         "dependencies": {
-          "runtime.win-arm64.Microsoft.DotNet.ILCompiler": "10.0.12"
+          "runtime.win-x64.Microsoft.DotNet.ILCompiler": "10.0.12"
         },
         "build": {
           "build/Microsoft.DotNet.ILCompiler.props": {}
@@ -31,7 +31,7 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "runtime.win-arm64.Microsoft.DotNet.ILCompiler/10.0.12": {
+      "runtime.win-x64.Microsoft.DotNet.ILCompiler/10.0.12": {
         "type": "package"
       }
     }
@@ -115,25 +115,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.win-arm64.Microsoft.DotNet.ILCompiler/10.0.12": {
-      "sha512": "2qwg37KiPUnsvPjdLhAMjcRTxLFAC5BhIBkJd1HEBGzgSK4WT+gg/C+kh5Gwg53EQv6xTqF2oGks+c49JLa8jw==",
+    "runtime.win-x64.Microsoft.DotNet.ILCompiler/10.0.12": {
+      "sha512": "clsgU9GnioCJ+PBzQTCoJHxLXRU+7O/BzYrwRT8CUP7jgyYjNgJmNsQ/kbzAA7MG5kDvFoFvIBGHGzYdINh/EQ==",
       "type": "package",
-      "path": "runtime.win-arm64.microsoft.dotnet.ilcompiler/10.0.12",
+      "path": "runtime.win-x64.microsoft.dotnet.ilcompiler/10.0.12",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-arm64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
-        "runtime.win-arm64.microsoft.dotnet.ilcompiler.nuspec",
-        "tools/clrjit_universal_arm64_arm64.dll",
-        "tools/clrjit_universal_arm_arm64.dll",
-        "tools/clrjit_unix_x64_arm64.dll",
-        "tools/clrjit_win_x64_arm64.dll",
-        "tools/clrjit_win_x86_arm64.dll",
+        "runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.12.nupkg.sha512",
+        "runtime.win-x64.microsoft.dotnet.ilcompiler.nuspec",
+        "tools/clrjit_universal_arm64_x64.dll",
+        "tools/clrjit_universal_arm_x64.dll",
+        "tools/clrjit_unix_x64_x64.dll",
+        "tools/clrjit_win_x64_x64.dll",
+        "tools/clrjit_win_x86_x64.dll",
         "tools/ilc.exe",
-        "tools/jitinterface_arm64.dll"
+        "tools/jitinterface_x64.dll"
       ]
     }
   },
@@ -144,19 +144,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maria\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj",
       "projectName": "Sensors Transit",
-      "projectPath": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj",
-      "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\obj\\",
+      "projectPath": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -216,23 +216,23 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
             "version": "[10.0.12, 10.0.12]"
           },
           {
-            "name": "Microsoft.NETCore.App.Runtime.NativeAOT.win-arm64",
+            "name": "Microsoft.NETCore.App.Runtime.NativeAOT.win-x64",
             "version": "[10.0.12, 10.0.12]"
           },
           {
-            "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
             "version": "[10.0.12, 10.0.12]"
           },
           {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
             "version": "[10.0.12, 10.0.12]"
           },
           {
-            "name": "runtime.win-arm64.Microsoft.DotNet.ILCompiler",
+            "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
             "version": "[10.0.12, 10.0.12]"
           }
         ],
@@ -519,7 +519,7 @@
       }
     },
     "runtimes": {
-      "win-arm64": {
+      "win-x64": {
         "#import": []
       }
     }

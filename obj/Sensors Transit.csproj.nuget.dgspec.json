@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj": {}
+    "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj": {
+    "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj",
         "projectName": "Sensors Transit",
-        "projectPath": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\Sensors Transit.csproj",
-        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Documents\\DAM\\DAM2\\c#\\exercicis\\Sensors Transit\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\Sensors Transit.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\Desktop\\LaSalle\\DAM 2.1\\C#\\Sensors-Transit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,23 +74,23 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
               "version": "[10.0.12, 10.0.12]"
             },
             {
-              "name": "Microsoft.NETCore.App.Runtime.NativeAOT.win-arm64",
+              "name": "Microsoft.NETCore.App.Runtime.NativeAOT.win-x64",
               "version": "[10.0.12, 10.0.12]"
             },
             {
-              "name": "Microsoft.NETCore.App.Runtime.win-arm64",
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
               "version": "[10.0.12, 10.0.12]"
             },
             {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
               "version": "[10.0.12, 10.0.12]"
             },
             {
-              "name": "runtime.win-arm64.Microsoft.DotNet.ILCompiler",
+              "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
               "version": "[10.0.12, 10.0.12]"
             }
           ],
@@ -377,7 +377,7 @@
         }
       },
       "runtimes": {
-        "win-arm64": {
+        "win-x64": {
           "#import": []
         }
       }
