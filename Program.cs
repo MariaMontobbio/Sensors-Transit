@@ -128,7 +128,11 @@ namespace SensorsTransit
         {
             Parallel.ForEach(SensorsLocal, delegate (Sensor sensor)
             {
-                Interlocked.Add(ref SumaVehicles, Suma(SumaVehicles, sensor));
+                // SumaVehicle es variable compartida --> condició carrera
+                int parcial = Suma(0, sensor);
+
+                // Suma el parcial una sola vegada
+                Interlocked.Add(ref SumaVehicles, parcial);
             });
 
             MitjanaVehicles = SumaVehicles / NumSensors;
